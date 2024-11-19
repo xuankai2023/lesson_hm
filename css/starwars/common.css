@@ -1,0 +1,268 @@
+/* 全局重置样式 */
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+b,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+l,
+m,
+n,
+o,
+p,
+q,
+r,
+s,
+t,
+u,
+v,
+w,
+x,
+y,
+z,
+caption,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+td,
+th,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+front,
+header,
+hgroup,
+menu,
+nav,
+option,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* 使HTML5元素在旧浏览器中正确显示 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+front,
+header,
+hgroup,
+menu,
+nav,
+option,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    display: block;
+}
+
+/* 处理列表样式 */
+ol,
+ul {
+    list-style: none;
+}
+
+/* 处理链接样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 处理图片元素 */
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+/* 处理表格样式 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 处理表单元素 */
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+
+
+
+/*业务模式*/
+html, body{
+    height:100vh;/*屏幕最大高度*/
+}
+body{
+    background: #000 url('.imagine/bg.jpg');
+}
+.starwars{
+    perspective: 800px;
+    transform-style:preserve-3d ;
+    height: 17em;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    /*移动 自身的大小*/
+    /*transform: translate(-50%,-50%);*/
+    background:red;
+}
+
+
+img {
+    width: 100%;
+}
+.star,.wars,.byline{
+    position: absolute;
+}
+.star{
+    top:-0.75em;
+}
+.wars{
+    bottom: -0.5em;
+}
+.byline{
+    color: #fff;
+    font-size: 2.25em;
+    left: -2em;
+    right: -2em;
+    letter-spacing: center;
+    text-transform: uppercase;
+    top:29%;}
+
+/*动作导演*/
+
+
+.star{
+   /* 动画名字+keyframes 定义动作*/
+    animation: star 10s easeout infinite ; }
+    @keyframes star{
+0%{
+    opacinty:0;
+    trainsform:scale(1.5)translateY(-0.75em);
+}
+20%{
+    opacity: 1;
+}   
+89%{
+    opacity: 1;
+
+    transform:scale(1);
+
+} 
+100%{
+    opacity: 0;
+    transform: translateZ(-1000em);
+}
+    }
+    @keyframes wars{
+        0%{
+            opacinty:0;
+            trainsform:scale(1.5)translateY (-0.75em);
+        }
+        20%{
+            opacity: 1;
+        }   
+        90%{
+            opacity: 1;
+        
+            transform:scale(1);
+        
+        } 
+        100%{
+            opacity: 0;
+            transform: translateZ(-1000em);
+        }
+    }
+.byline{
+    animation:movie-byline 10s linear infinite;
+}
+.byline span{
+    animation: spin-letters 10s linear infinite;
+}
+@keyframes moive-byline{
+    0%{
+        transform: translateZ(5em);
+    }
+    100%{
+        transform: translateZ(0em);
+    }
+}
+@keyframes spin-letters {
+    0%,10%{
+    opacity: 0;
+    transform: rotateY(90de);
+}  
+30%{
+    transform: rotateY(0);
+    opacity: 1;
+
+}  
+95%,100%{
+    opacity: 0;
+}
+}
