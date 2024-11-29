@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* 顺序 */
+        .container p:nth-child(2){
+            background-color: yellow;
+            color: black;
+        }
+        /* of-type */
+        .container p:nth-of-type(3){
+            background-color: lightblue;
+            color: black;
+        }
+    </style>
+    <div class="container">
+        <h1>nth-child vs nth-of-type 例子</h1>
+        <P>这是一个段落</P>
+        <P>这是第二个段落</P>
+        <div>只是一段div</div>
+        <p>这是第三段落</p>
+        
+            <p>这是一个段落</p>
+            <div>zheshidi1</div>
+        </div>
+    </div>
+</body>
+</html>
