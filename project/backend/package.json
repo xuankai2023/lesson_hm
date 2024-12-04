@@ -1,15 +1,15 @@
 {
-  "name": "song",
+  "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "json-server --watch user.json --port 3000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "openai": "^4.73.0"
+  "dependencies" :{
+    "json-server":"^1.0.0-beta.3"
   }
 }

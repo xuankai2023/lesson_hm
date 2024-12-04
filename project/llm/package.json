@@ -1,5 +1,5 @@
 {
-  "name": "song",
+  "name": "llm",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "openai": "^4.73.0"
+    "openai": "^4.73.1"
   }
 }
