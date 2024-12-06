@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "谭鸿泉"
+    },
+    {
+      "id": "2",
+      "name": "xkw"
+    },
+    {
+      "id": "3",
+      "name": "wr"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "学习ApiFOx",
+      "content": "post1 content",
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "title": "REACT + JSON-Server 全栈快跑",
+      "content": "react component ",
+      "userId": 2
+    }
+  ]
+}
