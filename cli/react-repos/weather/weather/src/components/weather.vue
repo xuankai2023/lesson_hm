@@ -25,7 +25,7 @@
 <script setup>
 import { ref, onMounted } from "vue"
 import AMapLoader from '@amap/amap-jsapi-loader';
-const localTime = ref("00:00-------------")
+const localTime = ref("00:00")
 const weatherData = ref({
   city: "北京",
   weather: "晴",
@@ -54,10 +54,13 @@ const init_map = () => {
 // init_map();
 // 当组件挂载完成后执行
 onMounted(() => {
-  init_map();
-  setInterval(() =>{
-      localTime.value = new Date.toLocaleString();
-  },1000)
+  // init_map();
+  // setInterval(() =>{
+  //     localTime.value = new Date.toLocaleString();
+  // },1000)
+  setInterval(() => {
+    localTime.value = new Date().toLocaleString();
+  }, 1000)
 })
 </script>
 
