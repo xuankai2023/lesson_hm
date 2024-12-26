@@ -28,3 +28,13 @@ JS 代码量增大，性能排在第一位，
 - vue 提供一个专注与业务的语法 v-model 双向绑定
   - data title input.value 使用
   - 同时 input 输入了后 data 里面的title也会更新
+
+- todos 应用
+  - todos 数据项
+  - title 任务
+  - @keydown.enter @event vue 事件监听
+   .enter 事件修饰符 事件业务更快
+  - 动态样式业务
+    : 动态绑定  - v-bind :缩写
+    ：class="{}" 双引号内部是 JS 运行区域
+    {done:todo.done}
